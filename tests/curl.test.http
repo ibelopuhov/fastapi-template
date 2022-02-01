@@ -1,0 +1,13 @@
+@api_service=127.0.0.1
+
+### Test GET request
+GET http://{{api_service}}:5001/api/settings HTTP/1.1
+
+### Test POST request
+POST  http://{{api_service}}:5001/post_example HTTP/1.1
+content-type: application/json
+
+{
+    "flat": false,
+    "text": "Сервис отвечает"
+}

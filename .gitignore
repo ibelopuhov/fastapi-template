@@ -1,0 +1,13 @@
+venv
+api-venv
+logs
+c
+**/*.img.gz
+annotator_config.json
+**/*.log
+**/__pycache__
+**/.pytest_cache
+.idea
+
+
+

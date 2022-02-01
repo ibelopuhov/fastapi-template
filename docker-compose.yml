@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  my_service_api:
+    image: my_service:latest
+    ports:
+      - 5001:5001
+    restart: on-failure
+    environment:
+      - "APP_SETTINGS_FILE=app_config.json"
+      - "TZ=Europe/Moscow"
+      - "PYTHONUNBUFFERED=1"
+    volumes:
+      - ./app_config_prod.json:/app_config.json:ro
+      - ./.env_prod:/.env:ro
+      - ./logs:/var/log/app/
+      

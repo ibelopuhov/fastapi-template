@@ -1,0 +1,15 @@
+venv
+api-venv
+logs
+docker-compose*
+__pycache__
+**/__pycache__*
+**/.env*
+!.env_prod
+**/*.http
+/*.json
+!annotator_config_prod.json
+!app_config_prod.json
+**/test*.py
+**/.git
+**/.gitignore
